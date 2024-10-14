@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class=>
+    <div class="container">
+        <header>
+            <div class="title">Produktai</div>
+            <img class="barbora" src="img/3dgifmaker96711.gif" alt="nebarbora">
+            <div class="icon-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>
+                <span id="pirkiniu-skaicius">0</span>
+            </div>
+        </header>
+
+       <div class="gif">
+       </div>
+        <div class="listProduct">
+            <div class="item" id="duona">
+                <img src="img/duona.png" alt="duona">
+                <div class="textdiv">
+                    <h2>Duona</h2>
+                    <div class="price">2 Eur</div>
+                    <button class="addCart" id="duona-prideti-mygtukas">
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="kiausiniai">
+                <img src="img/Kiausiniai.png" alt="kiausiniai">
+                <div class="textdiv">
+                    <h2>Kiaušiniai</h2>
+                    <div class="price">3 Eur</div>
+                    <button class="addCart" id="kiausiniai-prideti-mygtukas">
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="miltai">
+                <img src="img/Miltai.png" alt="miltai">
+                <div class="textdiv">
+                    <h2>Miltai</h2>
+                    <div class="price">1,50 Eur</div>
+                    <button class="addCart" id='miltai-prideti-mygtukas'>
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="pienas">
+                <img src="img/pienas.png" alt="pienas">
+                <div class="textdiv">
+                    <h2>Pienas</h2>
+                    <div class="price">2,50 Eur</div>
+                    <button class="addCart" id='pienas-prideti-mygtukas'>
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="bananai">
+                <img src="img/bananai.png" alt="bananai">
+                <div class="textdiv">
+                    <h2>Bananai</h2>
+                    <div class="price">1 Eur</div>
+                    <button class="addCart" id='bananai-prideti-mygtukas'>
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="sausainiai">
+                <img src="img/sausainiai.png" alt="sausainiai">
+                <div class="textdiv">
+                    <h2>Sausainiai</h2>
+                    <div class="price">4 Eur</div>
+                    <button class="addCart" id='sausainiai-prideti-mygtukas'>
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="varske">
+                <img src="img/varske.png" alt="varske">
+                <div class="textdiv">
+                    <h2>Varškė</h2>
+                    <div class="price">3,50 Eur</div>
+                    <button class="addCart" id='varske-prideti-mygtukas'>
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+            <div class="item" id="sviestas">
+                <img src="img/sviestass.png" alt="sviestas">
+                <div class="textdiv">
+                    <h2>Sviestas</h2>
+                    <div class="price">2,40 Eur</div>
+                    <button class="addCart" id='sviestas-prideti-mygtukas'>
+                        Pridėti į pirkinių krepšelį
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartTab">
+        <h1>Pirkinių krepšelis</h1>
+            <div class="listCart" id="krepselis">
+                <div class="item" id="duona-krepselis">
+                    <div class="image">
+                        <img src="img/duona.png" alt="">
+                    </div>
+                    <div class="name">
+                        Duona
+                    </div>
+                    <div class="totalPrice">
+                         <label id="duona-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="duona-minus">-</span>
+                        <span id="duona-kiekis">0</span>
+                        <span class="plus" id="duona-plus">+</span>
+                    </div>
+                </div>
+                <div class="item" id="kiausiniai-krepselis">
+                    <div class="image">
+                        <img src="img/Kiausiniai.png" alt="">
+                    </div>
+                    <div class="name">
+                        Kiaušiniai
+                    </div>
+                    <div class="totalPrice">
+                         <label id="kiausiniai-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="kiausiniai-minus">-</span>
+                        <span id="kiausiniai-kiekis">0</span>
+                        <span class="plus" id="kiausiniai-plus">+</span>
+                    </div>
+                </div>
+
+
+                <!-- Miltai -->
+                <div class="item" id="miltai-krepselis">
+                    <div class="image">
+                        <img src="img/Miltai.png" alt="">
+                    </div>
+                    <div class="name">
+                        Miltai
+                    </div>
+                    <div class="totalPrice">
+                        <label id="miltai-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="miltai-minus">-</span>
+                        <span id="miltai-kiekis">0</span>
+                        <span class="plus" id="miltai-plus">+</span>
+                    </div>
+                </div>
+
+                <!-- Pienas -->
+                <div class="item" id="pienas-krepselis">
+                    <div class="image">
+                        <img src="img/pienas.png" alt="">
+                    </div>
+                    <div class="name">
+                        Pienas
+                    </div>
+                    <div class="totalPrice">
+                        <label id="pienas-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="pienas-minus">-</span>
+                        <span id="pienas-kiekis">0</span>
+                        <span class="plus" id="pienas-plus">+</span>
+                    </div>
+                </div>
+
+                <!-- Bananai -->
+                <div class="item" id="bananai-krepselis">
+                    <div class="image">
+                        <img src="img/bananai.png" alt="">
+                    </div>
+                    <div class="name">
+                        Bananai
+                    </div>
+                    <div class="totalPrice">
+                        <label id="bananai-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="bananai-minus">-</span>
+                        <span id="bananai-kiekis">0</span>
+                        <span class="plus" id="bananai-plus">+</span>
+                    </div>
+                </div>
+
+                <!-- Sausainiai -->
+                <div class="item" id="sausainiai-krepselis">
+                    <div class="image">
+                        <img src="img/sausainiai.png" alt="">
+                    </div>
+                    <div class="name">
+                        Sausainiai
+                    </div>
+                    <div class="totalPrice">
+                        <label id="sausainiai-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="sausainiai-minus">-</span>
+                        <span id="sausainiai-kiekis">0</span>
+                        <span class="plus" id="sausainiai-plus">+</span>
+                    </div>
+                </div>
+
+                <!-- Varškė -->
+                <div class="item" id="varske-krepselis">
+                    <div class="image">
+                        <img src="img/varske.png" alt="">
+                    </div>
+                    <div class="name">
+                        Varškė
+                    </div>
+                    <div class="totalPrice">
+                        <label id="varske-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="varske-minus">-</span>
+                        <span id="varske-kiekis">0</span>
+                        <span class="plus" id="varske-plus">+</span>
+                    </div>
+                </div>
+
+                <!-- Sviestas -->
+                <div class="item" id="sviestas-krepselis">
+                    <div class="image">
+                        <img src="img/sviestass.png" alt="">
+                    </div>
+                    <div class="name">
+                        Sviestas
+                    </div>
+                    <div class="totalPrice">
+                        <label id="sviestas-kaina">0</label> Eur
+                    </div>
+                    <div class="quantity">
+                        <span class="minus" id="sviestas-minus">-</span>
+                        <span id="sviestas-kiekis">0</span>
+                        <span class="plus" id="sviestas-plus">+</span>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <div class="btn">
+                <button class="close">Uždaryti</button>
+                <button class="checkOut">Baigti pirkimą</button>
+            </div>
+            <div id="visa_suma">
+                <p>Visa suma: <label id="skaiciavimas">0</label> Eur</p>
+            </div>
+
+    </div>
+</body>
+</html>

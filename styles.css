@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: .5s;
+    position: relative;
+
+
+}
+
+.container .title{
+    font-size: 30px;
+
+}
+.container .barbora{
+width: auto;
+height: 120px;
+
+}
+
+.container svg{
+    cursor: pointer;
+    width: 45px;
+    scale: 1.8;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .icon-cart{
+    position: relative;
+}
+
+header .icon-cart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+.listProduct .item img{
+    width: 90%;
+    align-self: center;
+    justify-self:auto;
+    filter: drop-shadow(0 1px 10px black);
+}
+
+.listProduct{
+
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+
+
+.listProduct .item .price {
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+.listProduct .item button{
+    background-color: #353432;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto; 
+    display: grid;
+    grid-template-rows:  70px 1fr 70px;
+    transition: .5s;
+
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.cartTab .btn button{
+    background-color: #ded3b3;
+    border: 1px solid black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .listCart .item img{
+    width: 100%;
+}
+
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cartTab .listCart #duona-krepselis, #kiausiniai-krepselis, #miltai-krepselis, #pienas-krepselis, #bananai-krepselis, #sausainiai-krepselis, #varske-krepselis, #sviestas-krepselis{
+    display: none;
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quanity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+
+.listCart{
+    overflow: auto;
+}
+
+#visa_suma{
+    padding: 5px 20px;
+}
+
+@media (max-width:908px){
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .listProduct{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
